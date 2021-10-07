@@ -21,7 +21,7 @@ make: *** [all] Error 1
 
 ```
 
-or when building hyperkube image for ocp/k8s which requires `_output/bin/deepcopy-gen` linux
+or when building hyperkube image for ocp/k8s which requires `_output/bin/deepcopy-gen` from linux
 
 ```
  => ERROR [builder 4/4] RUN make WHAT='cmd/kube-apiserver cmd/kube-controller-manager cmd/kube-scheduler cmd/kubelet cmd/watch-termination  52.7s
@@ -44,6 +44,7 @@ cd /linux-cross-compiler
 docker build -t lin-comp:1 .
 ```
 or
+
 ```docker pull quay.io/npathan/linux-cross-compiler```
 
 ## Run
