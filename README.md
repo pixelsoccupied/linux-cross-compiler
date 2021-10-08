@@ -1,7 +1,7 @@
 # linux-cross-compiler
-This docker container can used to cross-compile Go binary (e.g for K8s and ocp/k8s components) from macOS or Windows. Heplful when overriding`GOOS` and `GOARCH` is not enough.
+This docker container can used to cross-compile Go binary (e.g for K8s and ocp/k8s components) from macOS or Windows. Helpful when overriding`GOOS` and `GOARCH` is not enough.
 
-This should help with error like for components that require CGO 
+This should help with error for components that require CGO 
 
 ```
 make WHAT="vendor/k8s.io/apiextensions-apiserver" KUBE_BUILD_PLATFORMS=linux/amd64 
